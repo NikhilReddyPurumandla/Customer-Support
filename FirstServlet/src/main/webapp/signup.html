@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+
+<html><head>
+<meta charset="UTF-8">
+
+  
+<style>
+form{
+ 
+   border: 3px solid black;
+   width:50%;
+}
+body {
+ align:center;
+ background-size:1500px 1900px;
+ font-family: Times New Roman;
+ color: black;
+ background-repeat: no-repeat;
+border-radius: 10px;
+}
+div {
+    border: 1px solid black;
+    padding:20px;
+}
+select {
+  padding: 6px;
+  height: 32px;
+  width: 7cm;
+  color:black;
+  border-radius: 10px;
+  
+}
+.box{
+  padding: 6px;
+  height: 20px;
+  width: 7cm;
+  color:black;
+  border-radius: 10px;
+  
+}
+button {
+  padding: 15px 30px 20px 20px;
+  color:black;
+  background-color: white;
+  font-size: 18px;
+  text-align: center;
+  font-style: normal;
+  width: 20%;
+  height: 20px;
+ 
+}
+</style>
+ </head>
+<body background="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE8z9A8rc2btClO0QKpSWmS-TZnlMZuSTz9KS5g2WNt5VWnc87">
+
+
+<h1 align="center">Register</h1>
+
+
+
+<center>
+
+<form action="SignupServlet" method="post" onsubmit="return formSubmit()">
+
+
+
+
+<div style="margin-bottom:10px;
+margin-top:10px;
+ margin-left:20px;
+ margin-right: 20px">
+
+<h2>Personal Details</h2>
+
+<h3> Name:</h3>
+
+<input type="text" name="name" placeholder="name">
+
+
+
+
+<h3>Date Of Birth:</h3>
+
+<input class="box" type="date" name="DateOfBirth" placeholder="DOB">
+
+
+
+<h3>Gender:</h3>
+
+<input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female
+
+<h3>Email:</h3>
+
+<input class="box" type="email" name="mail" placeholder="mailId">
+<h3>Password:</h3>
+
+<input class="box" type="password" name="password" placeholder="password">
+
+<h3>Re-enter Password:</h3>
+
+<input class="box" type="password" name="rpassword" placeholder="password">
+
+</div>
+
+
+
+<div style="margin-bottom: 10px;
+margin-top:10px;
+margin-left:20px;
+ margin-right: 20px;">  
+ 
+<h2>Education Details</h2>
+
+<h3>Highest education:</h3>
+
+<select name="education">
+
+<option value="M.tech">MTECH</option>
+
+<option value="MBA">MBA</option>
+
+<option value="B.TECH">B.TECH</option>
+
+</select>
+
+
+<h3>Specialization</h3>
+
+<select name="Specialization">
+
+<option value="cse">CSE</option>
+
+<option value="Ece">ECE</option>
+
+<option value="IT">IT</option>
+
+
+</select>
+
+<h3>Aggregate:</h3>
+<input class="box" type="text" placeholder="percentage">
+
+
+</div>
+
+
+<div style="margin-bottom:10px;
+margin-top:10px;
+ margin-left:20px;
+ margin-right: 20px">
+
+<h2>Job Role:</h2>
+
+<select name="job" name="user_job">
+<option value="c_developer">C Developer</option>
+
+<option value="php_developor">PHP Developer</option>
+
+<option value="java_developor">Java Developer</option>
+
+<option value="Tester"> Tester</option>
+
+
+</select>
+
+<h2>Interests:</h2>
+
+<input type="checkbox">Development
+
+<input type="checkbox">Design
+          
+<input type="checkbox">Business
+
+</div>
+
+
+<button type="submit">Sign Up</button>
+
+
+</form>
+
+</center>
+
+
+</body></html>

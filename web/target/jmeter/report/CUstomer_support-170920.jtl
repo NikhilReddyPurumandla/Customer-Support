@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="65" lt="65" ts="1505883216599" s="false" lb="http://localhost:8083/web-0.0.1-SNAPSHOT/signup.html" rc="404" rm="Not Found" tn="Thread Group 1-1" dt="text" by="1227"/>
+<httpSample t="492" lt="489" ts="1505883216684" s="true" lb="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE8z9A8rc2btClO0QKpSWmS-TZnlMZuSTz9KS5g2WNt5VWnc87" rc="200" rm="OK" tn="Thread Group 1-1" dt="bin" by="3601"/>
+<httpSample t="29" lt="29" ts="1505883220162" s="true" lb="http://localhost:8083/web-0.0.1-SNAPSHOT/SignupServlet" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="255"/>
+<httpSample t="6" lt="6" ts="1505883221634" s="true" lb="http://localhost:8083/web-0.0.1-SNAPSHOT/login.jsp" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="2168"/>
+<httpSample t="2149" lt="1732" ts="1505883221654" s="true" lb="https://img03.rl0.ru/cb73765f68c13080e513346ecb004a01/c646x220/media.licdn.com/media/AAEAAQAAAAAAAAo5AAAAJDQ2NzZkMjJjLWRlMjUtNDAyNy05MmE5LTllZWQyYThkYzYyYw.png" rc="200" rm="OK" tn="Thread Group 1-1" dt="bin" by="64625"/>
+<httpSample t="29" lt="11" ts="1505883224394" s="true" lb="http://localhost:8083/web-0.0.1-SNAPSHOT/LoginServlet" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="2120">
+  <httpSample t="11" lt="11" ts="1505883224394" s="true" lb="http://localhost:8083/web-0.0.1-SNAPSHOT/LoginServlet" rc="302" rm="Found" tn="" dt="text" by="480"/>
+  <httpSample t="4" lt="4" ts="1505883224419" s="true" lb="http://localhost:8083/web-0.0.1-SNAPSHOT/index.jsp?id=64F9EF337ACEC70DDEA6F8225A3C9DC6" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="2352"/>
+</httpSample>
+<httpSample t="3" lt="3" ts="1505883224428" s="true" lb="http://localhost:8083/web-0.0.1-SNAPSHOT/index.jsp?id=0EEA4CB3F96BEBEE5B824C000AAB055F" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="2352"/>
+<httpSample t="632" lt="413" ts="1505883224436" s="true" lb="https://i.ytimg.com/vi/dmuXdUXJ03k/maxresdefault_live.jpg" rc="200" rm="OK" tn="Thread Group 1-1" dt="bin" by="736095"/>
+<httpSample t="121" lt="120" ts="1505883225069" s="true" lb="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGp25MOfvTKpR18RKfSx7vbF4A3HayFaPrEBatJCZi5skpdR9FSQ" rc="200" rm="OK" tn="Thread Group 1-1" dt="bin" by="4649"/>
+<httpSample t="7" lt="7" ts="1505883225546" s="true" lb="http://localhost:8083/web-0.0.1-SNAPSHOT/ProfileServlet" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="2119"/>
+<httpSample t="32" lt="32" ts="1505883225562" s="true" lb="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGp25MOfvTKpR18RKfSx7vbF4A3HayFaPrEBatJCZi5skpdR9FSQ" rc="304" rm="Not Modified" tn="Thread Group 1-1" dt="" by="165"/>
+<httpSample t="6" lt="6" ts="1505883226525" s="true" lb="http://localhost:8083/web-0.0.1-SNAPSHOT/AddCustomer.jsp" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="3146"/>
+<httpSample t="37" lt="37" ts="1505883226546" s="true" lb="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE8z9A8rc2btClO0QKpSWmS-TZnlMZuSTz9KS5g2WNt5VWnc87" rc="304" rm="Not Modified" tn="Thread Group 1-1" dt="" by="165"/>
+<httpSample t="92" lt="92" ts="1505883231318" s="true" lb="http://localhost:8083/web-0.0.1-SNAPSHOT/CustomerRegServlet" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="1511"/>
+<httpSample t="116" lt="116" ts="1505883234470" s="true" lb="http://localhost:8083/web-0.0.1-SNAPSHOT/ContactServlet" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="1577"/>
+<httpSample t="95" lt="95" ts="1505883234590" s="true" lb="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE8z9A8rc2btClO0QKpSWmS-TZnlMZuSTz9KS5g2WNt5VWnc87" rc="304" rm="Not Modified" tn="Thread Group 1-1" dt="" by="166"/>
+<httpSample t="69" lt="69" ts="1505883237831" s="true" lb="http://localhost:8083/web-0.0.1-SNAPSHOT/ServiceRequestServlet" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="1629"/>
+<httpSample t="30" lt="30" ts="1505883237921" s="true" lb="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGp25MOfvTKpR18RKfSx7vbF4A3HayFaPrEBatJCZi5skpdR9FSQ" rc="304" rm="Not Modified" tn="Thread Group 1-1" dt="" by="166"/>
+<httpSample t="12" lt="7" ts="1505883239370" s="true" lb="http://localhost:8083/web-0.0.1-SNAPSHOT/LogoutServlet" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="178">
+  <httpSample t="7" lt="7" ts="1505883239370" s="true" lb="http://localhost:8083/web-0.0.1-SNAPSHOT/LogoutServlet" rc="302" rm="Found" tn="" dt="text" by="252"/>
+  <httpSample t="4" lt="4" ts="1505883239378" s="true" lb="http://localhost:8083/web-0.0.1-SNAPSHOT/logout.html" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="404"/>
+</httpSample>
+<httpSample t="4" lt="4" ts="1505883239849" s="true" lb="http://localhost:8083/web-0.0.1-SNAPSHOT/login.jsp" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="2168"/>
+<httpSample t="225" lt="213" ts="1505883239861" s="true" lb="https://img03.rl0.ru/cb73765f68c13080e513346ecb004a01/c646x220/media.licdn.com/media/AAEAAQAAAAAAAAo5AAAAJDQ2NzZkMjJjLWRlMjUtNDAyNy05MmE5LTllZWQyYThkYzYyYw.png" rc="200" rm="OK" tn="Thread Group 1-1" dt="bin" by="64625"/>
+
+</testResults>

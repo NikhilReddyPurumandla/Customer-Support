@@ -1,0 +1,418 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>Load Test Results</title>
+<style type="text/css">
+				body {
+					font:normal 68% verdana,arial,helvetica;
+					color:#000000;
+				}
+				table tr td, table tr th {
+					font-size: 68%;
+				}
+				table.details tr th{
+					font-weight: bold;
+					text-align:left;
+					background:#a6caf0;
+					white-space: nowrap;
+				}
+				table.details tr td{
+					background:#eeeee0;
+					white-space: nowrap;
+				}
+				h1 {
+					margin: 0px 0px 5px; font: 165% verdana,arial,helvetica
+				}
+				h2 {
+					margin-top: 1em; margin-bottom: 0.5em; font: bold 125% verdana,arial,helvetica
+				}
+				h3 {
+					margin-bottom: 0.5em; font: bold 115% verdana,arial,helvetica
+				}
+				.Failure {
+					font-weight:bold; color:red;
+				}
+				
+	
+				img
+				{
+				  border-width: 0px;
+				}
+				
+				.expand_link
+				{
+				   position=absolute;
+				   right: 0px;
+				   width: 27px;
+				   top: 1px;
+				   height: 27px;
+				}
+				
+				.page_details
+				{
+				   display: none;
+				}
+                                
+                                .page_details_expanded
+                                {
+                                    display: block;
+                                    display/* hide this definition from  IE5/6 */: table-row;
+                                }
+
+
+			</style>
+<script language="JavaScript">
+                           function expand(details_id)
+			   {
+			      
+			      document.getElementById(details_id).className = "page_details_expanded";
+			   }
+			   
+			   function collapse(details_id)
+			   {
+			      
+			      document.getElementById(details_id).className = "page_details";
+			   }
+			   
+			   function change(details_id)
+			   {
+			      if(document.getElementById(details_id+"_image").src.match("expand"))
+			      {
+			         document.getElementById(details_id+"_image").src = "collapse.jpg";
+			         expand(details_id);
+			      }
+			      else
+			      {
+			         document.getElementById(details_id+"_image").src = "expand.jpg";
+			         collapse(details_id);
+			      } 
+                           }
+			</script>
+</head>
+<body>
+<h1>Load Test Results</h1>
+<table width="100%">
+<tr>
+<td align="left"></td><td align="right">Designed for use with <a href="http://jakarta.apache.org/jmeter">JMeter</a> and <a href="http://ant.apache.org">Ant</a>.</td>
+</tr>
+</table>
+<hr size="1">
+<h2>Summary</h2>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details">
+<tr valign="top">
+<th>Tests</th><th>Failures</th><th>Success Rate</th><th>Average Time</th><th>Min Time</th><th>Max Time</th>
+</tr>
+<tr valign="top" class="Failure">
+<td>21</td><td>1</td><td>95.24%</td><td>202 ms</td><td>3 ms</td><td>2149 ms</td>
+</tr>
+</table>
+<hr align="left" width="95%" size="1">
+<h2>Pages</h2>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details">
+<tr valign="top">
+<th>URL</th><th>Tests</th><th>Failures</th><th>Success Rate</th><th>Average Time</th><th>Min Time</th><th>Max Time</th><th></th>
+</tr>
+<tr valign="top" class="Failure">
+<td><a href="#http://localhost:8083/web-0.0.1-SNAPSHOT/signup.html">http://localhost:8083/web-0.0.1-SNAPSHOT/signup.html</a></td><td>1</td><td>1</td><td>0.00%</td><td>65 ms</td><td>65 ms</td><td>65 ms</td><td align="center"><a href="javascript:change('page_details_1')"><img alt="expand/collapse" src="expand.jpg" id="page_details_1_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_1">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Page "http://localhost:8083/web-0.0.1-SNAPSHOT/signup.html"</b>
+<table width="95%" cellspacing="0" cellpadding="0" border="1" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Thread Group 1-1</td><td>1</td><td align="right">65</td><td align="right">1227</td><td align="center">false</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE8z9A8rc2btClO0QKpSWmS-TZnlMZuSTz9KS5g2WNt5VWnc87</td><td>3</td><td>0</td><td>100.00%</td><td>208 ms</td><td>37 ms</td><td>492 ms</td><td align="center"><a href="javascript:change('page_details_2')"><img alt="expand/collapse" src="expand.jpg" id="page_details_2_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_2">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Page "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSE8z9A8rc2btClO0QKpSWmS-TZnlMZuSTz9KS5g2WNt5VWnc87"</b>
+<table width="95%" cellspacing="0" cellpadding="0" border="1" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Thread Group 1-1</td><td>1</td><td align="right">492</td><td align="right">3601</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Thread Group 1-1</td><td>2</td><td align="right">37</td><td align="right">165</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Thread Group 1-1</td><td>3</td><td align="right">95</td><td align="right">166</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>http://localhost:8083/web-0.0.1-SNAPSHOT/SignupServlet</td><td>1</td><td>0</td><td>100.00%</td><td>29 ms</td><td>29 ms</td><td>29 ms</td><td align="center"><a href="javascript:change('page_details_3')"><img alt="expand/collapse" src="expand.jpg" id="page_details_3_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_3">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Page "http://localhost:8083/web-0.0.1-SNAPSHOT/SignupServlet"</b>
+<table width="95%" cellspacing="0" cellpadding="0" border="1" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Thread Group 1-1</td><td>1</td><td align="right">29</td><td align="right">255</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>http://localhost:8083/web-0.0.1-SNAPSHOT/login.jsp</td><td>2</td><td>0</td><td>100.00%</td><td>5 ms</td><td>4 ms</td><td>6 ms</td><td align="center"><a href="javascript:change('page_details_4')"><img alt="expand/collapse" src="expand.jpg" id="page_details_4_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_4">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Page "http://localhost:8083/web-0.0.1-SNAPSHOT/login.jsp"</b>
+<table width="95%" cellspacing="0" cellpadding="0" border="1" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Thread Group 1-1</td><td>1</td><td align="right">6</td><td align="right">2168</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Thread Group 1-1</td><td>2</td><td align="right">4</td><td align="right">2168</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>https://img03.rl0.ru/cb73765f68c13080e513346ecb004a01/c646x220/media.licdn.com/media/AAEAAQAAAAAAAAo5AAAAJDQ2NzZkMjJjLWRlMjUtNDAyNy05MmE5LTllZWQyYThkYzYyYw.png</td><td>2</td><td>0</td><td>100.00%</td><td>1187 ms</td><td>225 ms</td><td>2149 ms</td><td align="center"><a href="javascript:change('page_details_5')"><img alt="expand/collapse" src="expand.jpg" id="page_details_5_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_5">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Page "https://img03.rl0.ru/cb73765f68c13080e513346ecb004a01/c646x220/media.licdn.com/media/AAEAAQAAAAAAAAo5AAAAJDQ2NzZkMjJjLWRlMjUtNDAyNy05MmE5LTllZWQyYThkYzYyYw.png"</b>
+<table width="95%" cellspacing="0" cellpadding="0" border="1" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Thread Group 1-1</td><td>1</td><td align="right">2149</td><td align="right">64625</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Thread Group 1-1</td><td>2</td><td align="right">225</td><td align="right">64625</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>http://localhost:8083/web-0.0.1-SNAPSHOT/LoginServlet</td><td>1</td><td>0</td><td>100.00%</td><td>29 ms</td><td>29 ms</td><td>29 ms</td><td align="center"><a href="javascript:change('page_details_6')"><img alt="expand/collapse" src="expand.jpg" id="page_details_6_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_6">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Page "http://localhost:8083/web-0.0.1-SNAPSHOT/LoginServlet"</b>
+<table width="95%" cellspacing="0" cellpadding="0" border="1" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Thread Group 1-1</td><td>1</td><td align="right">29</td><td align="right">2120</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>http://localhost:8083/web-0.0.1-SNAPSHOT/index.jsp?id=0EEA4CB3F96BEBEE5B824C000AAB055F</td><td>1</td><td>0</td><td>100.00%</td><td>3 ms</td><td>3 ms</td><td>3 ms</td><td align="center"><a href="javascript:change('page_details_7')"><img alt="expand/collapse" src="expand.jpg" id="page_details_7_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_7">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Page "http://localhost:8083/web-0.0.1-SNAPSHOT/index.jsp?id=0EEA4CB3F96BEBEE5B824C000AAB055F"</b>
+<table width="95%" cellspacing="0" cellpadding="0" border="1" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Thread Group 1-1</td><td>1</td><td align="right">3</td><td align="right">2352</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>https://i.ytimg.com/vi/dmuXdUXJ03k/maxresdefault_live.jpg</td><td>1</td><td>0</td><td>100.00%</td><td>632 ms</td><td>632 ms</td><td>632 ms</td><td align="center"><a href="javascript:change('page_details_8')"><img alt="expand/collapse" src="expand.jpg" id="page_details_8_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_8">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Page "https://i.ytimg.com/vi/dmuXdUXJ03k/maxresdefault_live.jpg"</b>
+<table width="95%" cellspacing="0" cellpadding="0" border="1" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Thread Group 1-1</td><td>1</td><td align="right">632</td><td align="right">736095</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGp25MOfvTKpR18RKfSx7vbF4A3HayFaPrEBatJCZi5skpdR9FSQ</td><td>3</td><td>0</td><td>100.00%</td><td>61 ms</td><td>30 ms</td><td>121 ms</td><td align="center"><a href="javascript:change('page_details_9')"><img alt="expand/collapse" src="expand.jpg" id="page_details_9_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_9">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Page "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGp25MOfvTKpR18RKfSx7vbF4A3HayFaPrEBatJCZi5skpdR9FSQ"</b>
+<table width="95%" cellspacing="0" cellpadding="0" border="1" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Thread Group 1-1</td><td>1</td><td align="right">121</td><td align="right">4649</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Thread Group 1-1</td><td>2</td><td align="right">32</td><td align="right">165</td><td align="center">true</td>
+</tr>
+<tr>
+<td>Thread Group 1-1</td><td>3</td><td align="right">30</td><td align="right">166</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>http://localhost:8083/web-0.0.1-SNAPSHOT/ProfileServlet</td><td>1</td><td>0</td><td>100.00%</td><td>7 ms</td><td>7 ms</td><td>7 ms</td><td align="center"><a href="javascript:change('page_details_10')"><img alt="expand/collapse" src="expand.jpg" id="page_details_10_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_10">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Page "http://localhost:8083/web-0.0.1-SNAPSHOT/ProfileServlet"</b>
+<table width="95%" cellspacing="0" cellpadding="0" border="1" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Thread Group 1-1</td><td>1</td><td align="right">7</td><td align="right">2119</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>http://localhost:8083/web-0.0.1-SNAPSHOT/AddCustomer.jsp</td><td>1</td><td>0</td><td>100.00%</td><td>6 ms</td><td>6 ms</td><td>6 ms</td><td align="center"><a href="javascript:change('page_details_11')"><img alt="expand/collapse" src="expand.jpg" id="page_details_11_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_11">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Page "http://localhost:8083/web-0.0.1-SNAPSHOT/AddCustomer.jsp"</b>
+<table width="95%" cellspacing="0" cellpadding="0" border="1" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Thread Group 1-1</td><td>1</td><td align="right">6</td><td align="right">3146</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>http://localhost:8083/web-0.0.1-SNAPSHOT/CustomerRegServlet</td><td>1</td><td>0</td><td>100.00%</td><td>92 ms</td><td>92 ms</td><td>92 ms</td><td align="center"><a href="javascript:change('page_details_12')"><img alt="expand/collapse" src="expand.jpg" id="page_details_12_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_12">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Page "http://localhost:8083/web-0.0.1-SNAPSHOT/CustomerRegServlet"</b>
+<table width="95%" cellspacing="0" cellpadding="0" border="1" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Thread Group 1-1</td><td>1</td><td align="right">92</td><td align="right">1511</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>http://localhost:8083/web-0.0.1-SNAPSHOT/ContactServlet</td><td>1</td><td>0</td><td>100.00%</td><td>116 ms</td><td>116 ms</td><td>116 ms</td><td align="center"><a href="javascript:change('page_details_13')"><img alt="expand/collapse" src="expand.jpg" id="page_details_13_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_13">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Page "http://localhost:8083/web-0.0.1-SNAPSHOT/ContactServlet"</b>
+<table width="95%" cellspacing="0" cellpadding="0" border="1" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Thread Group 1-1</td><td>1</td><td align="right">116</td><td align="right">1577</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>http://localhost:8083/web-0.0.1-SNAPSHOT/ServiceRequestServlet</td><td>1</td><td>0</td><td>100.00%</td><td>69 ms</td><td>69 ms</td><td>69 ms</td><td align="center"><a href="javascript:change('page_details_14')"><img alt="expand/collapse" src="expand.jpg" id="page_details_14_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_14">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Page "http://localhost:8083/web-0.0.1-SNAPSHOT/ServiceRequestServlet"</b>
+<table width="95%" cellspacing="0" cellpadding="0" border="1" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Thread Group 1-1</td><td>1</td><td align="right">69</td><td align="right">1629</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+<tr valign="top" class="">
+<td>http://localhost:8083/web-0.0.1-SNAPSHOT/LogoutServlet</td><td>1</td><td>0</td><td>100.00%</td><td>12 ms</td><td>12 ms</td><td>12 ms</td><td align="center"><a href="javascript:change('page_details_15')"><img alt="expand/collapse" src="expand.jpg" id="page_details_15_image"></a></td>
+</tr>
+<tr class="page_details" id="page_details_15">
+<td bgcolor="#FF0000" colspan="8">
+<div align="center">
+<b>Details for Page "http://localhost:8083/web-0.0.1-SNAPSHOT/LogoutServlet"</b>
+<table width="95%" cellspacing="0" cellpadding="0" border="1" bordercolor="#000000">
+<tr>
+<th>Thread</th><th>Iteration</th><th>Time (milliseconds)</th><th>Bytes</th><th>Success</th>
+</tr>
+<tr>
+<td>Thread Group 1-1</td><td>1</td><td align="right">12</td><td align="right">178</td><td align="center">true</td>
+</tr>
+</table>
+</div>
+</td>
+</tr>
+</table>
+<hr align="left" width="95%" size="1">
+<h2>Failure Detail</h2>
+<h3>http://localhost:8083/web-0.0.1-SNAPSHOT/signup.html<a name="http://localhost:8083/web-0.0.1-SNAPSHOT/signup.html"></a>
+</h3>
+<table width="95%" cellspacing="2" cellpadding="5" border="0" class="details">
+<tr valign="top">
+<th>Response</th><th>Failure Message</th>
+</tr>
+<tr>
+<td>404 - Not Found</td><td></td>
+</tr>
+</table>
+</body>
+</html>
