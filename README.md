@@ -5,35 +5,37 @@ An admin side Customer support portal for employees to solve the tickets raised 
 
 Install Java. Make sure you have Java installed.
 
-### Tomcat Installation
+## Tomcat Installation
 
 1.Go to https://tomcat.apache.org/download-80.cgi and download latest version of tomcat.
 
 2.Unzip Tomcat.
 
-### MySql
+## MySql
 
 click here https://www.mysql.com/downloads/ and download latest version of mysql.
 
+## Steps to Build Application
+
+1. Download teh source code from git repository and extract it.
+
+2. Build it using "mvn install" command in terminal. Now a war file gets generated.
+
 ## Steps to run Application
 
-Download the source code from git repository and extract it.
+1. Enter http://localhost:8080 in browser.
 
-Build it using "mvn install" command in terminal. Now a war file gets generated.
+2. Tomcat Home page will be displayed.(if any port issues found tan change teh port numbers in server.xml file)
 
-Enter http://localhost:8080 in browser.
+3. Upload the war file of the application in the specified location.
 
-Tomcat Home page will be displayed.(if any port issues found tan change teh port numbers in server.xml file)
+4. Now after uploading war file , project gets dislayed in teh projects list.
 
-Upload the war file of the application in the specified location.
+5. Click on teh project, you will be directed to home page of application.
 
-Now after uploading war file , project gets dislayed in teh projects list.
+## Project flow
 
-Click on teh project, you will be directed to home page of application.
-
-## Execution flow
-
-login --> index --> profile --> add customers --> view customers --> view requests --> solved requests --> service logs -->log out
+login -> index -> profile -> add customers -> view customers -> view requests -> solved requests -> service logs ->log out
 
 ## License
 MIT License
