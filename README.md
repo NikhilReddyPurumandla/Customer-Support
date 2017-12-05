@@ -3,7 +3,7 @@ An admin side Customer support portal for employees to solve the tickets raised 
 
 ServiceApp is j2ee based web application used for recieving request from customer and solving them.
 
-# Pre requisites
+## Pre requisites
 
 Database : Mysql(go through Service.sql file for sql queries to create tables)
 
@@ -13,11 +13,11 @@ Eclipse IDE:Oxygen or Neon version.
 
 The project is built as a maven project.
 
-# Execution flow
+## Execution flow
 
 login --> index --> profile --> add customers --> view customers --> view requests --> solved requests --> service logs -->log out
 
-# License
+## License
 MIT License
 
 Copyright (c) [2017] [NikhilReddyPurumandla]
