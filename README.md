@@ -15,7 +15,7 @@ The project is built as a maven project.
 
 # Execution flow
 
-login-->index--profile-->add customers -- >view customers --> view requests --> solved requests -- >service logs -- >log out
+login --> index --> profile --> add customers --> view customers --> view requests --> solved requests --> service logs -->log out
 
 # License
 MIT License
