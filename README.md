@@ -1,17 +1,35 @@
 # Customer-Support
 An admin side Customer support portal for employees to solve the tickets raised by customers . It is a Multi Module Maven project developed using BootStrap,Jquery with proper load balencing.
 
-ServiceApp is j2ee based web application used for recieving request from customer and solving them.
+## Prerequisites
 
-## Pre requisites
+Install Java. Make sure you have Java installed.
 
-Database : Mysql(go through Service.sql file for sql queries to create tables)
+### Tomcat Installation
 
-jdk : 1.8
+1.Go to https://tomcat.apache.org/download-80.cgi and download latest version of tomcat.
 
-Eclipse IDE:Oxygen or Neon version.
+2.Unzip Tomcat.
 
-The project is built as a maven project.
+### MySql
+
+click here https://www.mysql.com/downloads/ and download latest version of mysql.
+
+## Steps to run Application
+
+Download the source code from git repository and extract it.
+
+Build it using "mvn install" command in terminal. Now a war file gets generated.
+
+Enter http://localhost:8080 in browser.
+
+Tomcat Home page will be displayed.(if any port issues found tan change teh port numbers in server.xml file)
+
+Upload the war file of the application in the specified location.
+
+Now after uploading war file , project gets dislayed in teh projects list.
+
+Click on teh project, you will be directed to home page of application.
 
 ## Execution flow
 
